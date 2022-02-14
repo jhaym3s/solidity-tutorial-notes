@@ -30,6 +30,8 @@ contract Enum {
         Status status;
     }
 
+    ShippedItem[] public shippedItem;
+
     // Update status by passing uint into input
     //you will be requested to put in an uint 
     function set(Status _status) public {
