@@ -18,7 +18,7 @@ contract ComeFundMe{
         _;
     }
 
-    function withdrawFunds() external onlyAdmin{
+    function withdrawFunds() external onlyAdmin{ 
         emit Withdraw(address(this).balance);
         selfdestruct(payable(msg.sender));
     }
