@@ -19,7 +19,7 @@ contract Kill{
         function getBalance()external view returns(uint){
             return address(this).balance;
         }
-
+  
         function forceSendEther(Kill _kill)external {
             _kill.destroy();
         }
